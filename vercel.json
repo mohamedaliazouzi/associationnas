@@ -1,7 +1,7 @@
-{
+{"version": 2,
   "builds": [
     {
-      "src": "associationnas/",
+      "src": "associationnas/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",

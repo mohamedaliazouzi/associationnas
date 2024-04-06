@@ -17,11 +17,14 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    {
-      "src": "/api/(.*)",
+    {"comment":{
+     "src": "/api/(.*)",
       "dest": "associationnas/wsgi.py"
-    },
-    {
+    }},
+ {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },    {
       "src": "/(.*)",
       "dest": "associationnas/wsgi.py"
     }

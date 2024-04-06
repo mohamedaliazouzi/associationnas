@@ -1,4 +1,4 @@
-{
+{"version": 3,
   "builds": [
     {
       "src": "associationnas/wsgi.py",
@@ -6,6 +6,12 @@
       "config": {
         "maxLambdaSize": "15mb",
         "runtime": "python3.9"
+      }},
+      {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles"
       }
     }
   ],
